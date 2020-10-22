@@ -1,0 +1,13 @@
+* 4 design patterns. Guns at fort Davis and Meagher.
+* Signaling system in Youghal and Kinsale.
+* When ship seen signal sent to blarney.
+* Different ship types. Sailing, Destroyer, Aircraft Carrier etc.
+* Tread for Youghal, blarney, Kinsale.
+* Synchronisation to a shared area.
+* Make bombs in order. Producer Consumer in blarney.
+* Blarney Factory busy, one bomb at at time.
+* Two factory methods. One for ships, one for bombs.
+* DAO Store bombs in store. Blarney Site.
+* 
+
+*Ship Abstract Super Class.
