@@ -1,6 +1,6 @@
-package Model;
+package Model.Bombs;
 
-public class Bomb {
+public abstract class Bomb {
     private int damage;
     private String bombDesignation;
     private int penetration;

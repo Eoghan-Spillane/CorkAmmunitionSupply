@@ -1,6 +1,6 @@
-package Model;
+package Model.Ships;
 
-public class Ship {
+public abstract class Ship {
     private int hitPoints;
     private String shipName;
     private int armorThicc;
