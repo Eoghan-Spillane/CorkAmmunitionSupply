@@ -54,6 +54,6 @@ public abstract class Ship {
     }
 
     public String toString(){
-        return "The " + shipName + " has taken " + (100 - hitPoints) + " points of damage. /nIt is moving at " + speed + " knots. /nIt's armor is " + armorThicc + "mm thick.";
+        return "The " + shipName + " has taken " + (100 - hitPoints) + " points of damage. \nIt is moving at " + speed + " knots. \nIt's armor is " + armorThicc + "mm thick.";
     }
 }
