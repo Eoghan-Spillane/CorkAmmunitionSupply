@@ -1,7 +1,6 @@
 package Model;
 
 import Model.Ships.Ship;
-
 import java.util.Observable;
 
 public class Outpost extends Observable implements Runnable {

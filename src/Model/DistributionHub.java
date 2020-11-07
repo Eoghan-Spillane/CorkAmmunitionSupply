@@ -7,19 +7,35 @@ import java.util.Observable;
 import java.util.Observer;
 
 public class DistributionHub implements Runnable, Observer {
+    private static DistributionHub hub;
     FactoryController factories = new FactoryController();
     Observable outpost1; //Kinsale
     Observable outpost2; //Youghal
     String name;
     Bomb capacity = null;
 
-    public DistributionHub(String hubName, Observable Ob1, Observable Ob2) {
-        System.out.print("\nBlarney Powering Up\n");
-        name = hubName;
+//    private DistributionHub(String hubName, Observable Ob1, Observable Ob2) {
+//        System.out.print("\nBlarney Powering Up\n");
+//        name = hubName;
+//        this.outpost1 = Ob1;
+//        this.outpost2 = Ob2;
+//        outpost1.addObserver(this);
+//        outpost2.addObserver(this);
+//    }
+
+    private DistributionHub(){
+        System.out.println("Distribution Hub Running");
+    }
+
+    public void AddObservers(Observable Ob1, Observable Ob2){
         this.outpost1 = Ob1;
         this.outpost2 = Ob2;
         outpost1.addObserver(this);
         outpost2.addObserver(this);
+    }
+
+    public void setName(String name){
+        this.name = name;
     }
 
     public void produce(Ship threat) throws InterruptedException{
@@ -106,4 +122,12 @@ public class DistributionHub implements Runnable, Observer {
             System.out.println("Observer Failed");
         }
     }
+
+    public static DistributionHub getInstance(){
+        if(hub == null){
+            hub = new DistributionHub();
+        }
+        return hub;
+    }
+
 }

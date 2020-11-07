@@ -9,8 +9,6 @@ import java.util.Observable;
 public class OutpostController{
     Outpost kinsale = new Outpost("Kinsale"); //Observable
     Outpost youghal = new Outpost("Youghal"); //Observable
-    DistributionHub blarney; //Observer
-
 
     public void checkForShipsWest(Ship ship){
         kinsale.spotShip(ship);
@@ -25,11 +23,12 @@ public class OutpostController{
     }
 
     public void createObserver(){
-        DistributionHub blarney = new DistributionHub("Blarney", kinsale, youghal);
-        Thread blarneyThread = new Thread(blarney);
+        DistributionHub.getInstance().setName("Blarney");
+        DistributionHub.getInstance().AddObservers(kinsale, youghal);
+        Thread blarneyThread = new Thread(DistributionHub.getInstance());
         blarneyThread.start();
-        kinsale.setAssignedDistributionHub(blarney);
-        youghal.setAssignedDistributionHub(blarney);
+        kinsale.setAssignedDistributionHub(DistributionHub.getInstance());
+        youghal.setAssignedDistributionHub(DistributionHub.getInstance());
     }
 
     public String getKinsaleName(){
