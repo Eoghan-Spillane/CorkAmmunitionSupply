@@ -11,6 +11,7 @@ public class OutpostController{
     Outpost youghal = new Outpost("Youghal"); //Observable
     DistributionHub blarney; //Observer
 
+
     public void checkForShipsWest(Ship ship){
         kinsale.spotShip(ship);
         Thread kinsaleThread = new Thread(kinsale);
@@ -25,6 +26,10 @@ public class OutpostController{
 
     public void createObserver(){
         DistributionHub blarney = new DistributionHub("Blarney", kinsale, youghal);
+        Thread blarneyThread = new Thread(blarney);
+        blarneyThread.start();
+        kinsale.setAssignedDistributionHub(blarney);
+        youghal.setAssignedDistributionHub(blarney);
     }
 
     public String getKinsaleName(){
@@ -37,6 +42,7 @@ public class OutpostController{
     public void setKinsaleName(String name){
         kinsale.setOutpostName(name);
     }
+
     public void setYoughalName(String name){
         youghal.setOutpostName(name);
     }

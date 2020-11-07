@@ -19,7 +19,7 @@ public class FactoryController {
     }
 
     // Calls the bomb factories and creates them.
-    public Bomb buildHighExplosive(){
+    public Bomb buildHighExplosiveBomb(){
         return new HighExplosiveBombFactory().buildBomb();
     }
 

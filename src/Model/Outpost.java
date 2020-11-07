@@ -7,6 +7,7 @@ import java.util.Observable;
 public class Outpost extends Observable implements Runnable {
     private String name;
     private Ship arrivingShip;
+    DistributionHub assignedDistributionHub;
 
     public Outpost(String name) {
         this.name = name;
@@ -14,28 +15,30 @@ public class Outpost extends Observable implements Runnable {
 
     @Override
     public void run() {
+            try{
+                System.out.print("\nThread " + Thread.currentThread().getId() + " at "+ this.name + " is Running - Start");
+                    //System.out.print("\nThread " + Thread.currentThread().getId() + " is Updating");
+                    Ship ship = arrivingShip;
+                    Thread.sleep(1000);
+                    setChanged();
+                    notifyObservers(ship);
 
-        try{
-            System.out.print("\nThread " + Thread.currentThread().getId() + " is Running - Start");
-
-            Thread.sleep(1000);
-            setChanged();
-            notifyObservers(arrivingShip);
-
-            if(hasChanged()){
-                clearChanged();
+                    if (hasChanged()) {
+                        clearChanged();
+                    }
+                //System.out.print("\nThread " + Thread.currentThread().getId() + " is Running - End");
+            }catch (Exception e){
+                System.out.println("\tException is Caught. Makes Sure Blarney is Running");
+                System.exit(0);
             }
-
-            System.out.print("\nThread " + Thread.currentThread().getId() + " is Running - End");
-
-        }catch (Exception e){
-            System.out.println("Exception is caught");
-
-        }
     }
 
     public void spotShip(Ship ship){
         this.arrivingShip = ship;
+    }
+
+    public void setAssignedDistributionHub(DistributionHub hub){
+        this.assignedDistributionHub = hub;
     }
 
     public String getOutpostName() {
