@@ -98,7 +98,7 @@ public class DistributionHub implements Runnable, Observer {
 
     @Override
     public void update(Observable obs, Object arg) {
-        System.out.print("\nThread " + Thread.currentThread().getId() + " is Updating");
+        //System.out.print("\nThread " + Thread.currentThread().getId() + " is Updating");
         try{
             // Create producer thread
             new Thread(new Runnable() {

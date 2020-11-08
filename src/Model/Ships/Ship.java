@@ -1,5 +1,6 @@
 package Model.Ships;
 
+// Extra Attributes for part 2
 public abstract class Ship implements java.io.Serializable{
     private int hitPoints;
     private String shipName;

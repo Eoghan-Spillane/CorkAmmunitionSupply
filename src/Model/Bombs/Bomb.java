@@ -1,5 +1,6 @@
 package Model.Bombs;
 
+// Extra Attributes for part 2
 public abstract class Bomb implements java.io.Serializable{
     private int damage;
     private String bombDesignation;
