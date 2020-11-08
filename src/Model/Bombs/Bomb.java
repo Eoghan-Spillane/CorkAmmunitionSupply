@@ -1,6 +1,6 @@
 package Model.Bombs;
 
-public abstract class Bomb {
+public abstract class Bomb implements java.io.Serializable{
     private int damage;
     private String bombDesignation;
     private int penetration;

@@ -2,6 +2,7 @@ package Model;
 
 import Controller.FactoryController;
 import Model.Bombs.Bomb;
+import Model.Dao.BlarneyProductionImpl;
 import Model.Ships.Ship;
 import java.util.Observable;
 import java.util.Observer;
@@ -13,6 +14,8 @@ public class DistributionHub implements Runnable, Observer {
     Observable outpost2; //Youghal
     String name;
     Bomb capacity = null;
+    Ship problemShip = null;
+    String fort = null;
 
 //    private DistributionHub(String hubName, Observable Ob1, Observable Ob2) {
 //        System.out.print("\nBlarney Powering Up\n");
@@ -38,7 +41,7 @@ public class DistributionHub implements Runnable, Observer {
         this.name = name;
     }
 
-    public void produce(Ship threat) throws InterruptedException{
+    public void produce(Ship threat, String outpost) throws InterruptedException{
             synchronized (this) {
                 while (capacity != null) {
                     wait();
@@ -51,6 +54,15 @@ public class DistributionHub implements Runnable, Observer {
                 }else{
                     capacity = factories.buildTorpedoBomb();
                 }
+
+                //If the attack is arriving from the west then the shells are sent to the opposite side of the harbor.
+                if(outpost.equals("Kinsale")){
+                    fort = "Carlisle";
+                }else{
+                    fort = "Camden";
+                }
+
+                problemShip = threat;
 
                 notify();
 
@@ -66,7 +78,10 @@ public class DistributionHub implements Runnable, Observer {
                 }
 
                 System.out.println("\n" + capacity.toString());
+                BlarneyProductionImpl.getInstance().addLog(capacity, problemShip, fort);
                 capacity = null;
+                problemShip = null;
+                fort = null;
 
                 notify();
 
@@ -89,7 +104,7 @@ public class DistributionHub implements Runnable, Observer {
                 public void run()
                 {
                     try {
-                        produce(((Ship) arg));
+                        produce(((Ship) arg), ((Outpost) obs).getOutpostName());
                     }
                     catch (InterruptedException e) {
                         e.printStackTrace();
@@ -97,7 +112,6 @@ public class DistributionHub implements Runnable, Observer {
                 }
             }).start();
 
-            //System.out.print("\nThread " + Thread.currentThread().getId() + " is Updating");
             System.out.print("\nNew Threat Spotted in "+ ((Outpost) obs).getOutpostName() + ", " + ((Ship) arg).getShipName() + " Detected.");
         }catch (Exception e){
             System.out.print("No Ship");

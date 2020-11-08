@@ -4,8 +4,6 @@ import Model.Outpost;
 import Model.Ships.Ship;
 import Model.DistributionHub;
 
-import java.util.Observable;
-
 public class OutpostController{
     Outpost kinsale = new Outpost("Kinsale"); //Observable
     Outpost youghal = new Outpost("Youghal"); //Observable
@@ -22,8 +20,9 @@ public class OutpostController{
         youghalThread.start();
     }
 
+    // Singleton Pattern
     public void createObserver(){
-        DistributionHub.getInstance().setName("Blarney");
+        DistributionHub.getInstance().setName("Blarney"); //Singleton pattern
         DistributionHub.getInstance().AddObservers(kinsale, youghal);
         Thread blarneyThread = new Thread(DistributionHub.getInstance());
         blarneyThread.start();

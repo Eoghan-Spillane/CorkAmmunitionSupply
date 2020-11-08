@@ -1,6 +1,6 @@
 package Model.Ships;
 
-public abstract class Ship {
+public abstract class Ship implements java.io.Serializable{
     private int hitPoints;
     private String shipName;
     private int armorThicc;

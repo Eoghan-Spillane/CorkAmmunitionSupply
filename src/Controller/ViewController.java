@@ -1,22 +1,19 @@
 package Controller;
 
-import Controller.FactoryController;
-import Controller.OutpostController;
-import Model.Ships.BattleshipShipFactory;
+import Model.Dao.BlarneyProductionImpl;
 
 // This class holds the functions that are activated by button presses in the gui
 public class ViewController {
     static FactoryController factories = new FactoryController(); //This places all the ShipFactories/BombFactories methods in once place to be called more easily
     static OutpostController outposts = new OutpostController();  //This contains all the methods needed for the Observer, Observables and Threads.
-    static int fleetCounter = -1;
+    static int fleetCounter = 0;
 
     //Spot Ships
     public void spotDestroyerEast(){
         if(fleetCounter < 10){
             fleetCounter++;
             outposts.checkForShipsEast(factories.buildDestroyer());
-        }
-        else{
+        } else{
             System.out.print("\n Fleet Full, there are " + fleetCounter + " Ships");
         }
     }
