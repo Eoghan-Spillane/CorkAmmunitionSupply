@@ -10,7 +10,7 @@ import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-
+// Data Access Object
 public class BlarneyProductionImpl implements ProductionLogDao {
     private static BlarneyProductionImpl Impl;
     List<BlarneyProductionLog> Logs;

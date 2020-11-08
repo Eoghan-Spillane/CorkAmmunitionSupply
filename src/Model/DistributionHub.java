@@ -7,15 +7,17 @@ import Model.Ships.Ship;
 import java.util.Observable;
 import java.util.Observer;
 
+//Singleton
 public class DistributionHub implements Runnable, Observer {
     private static DistributionHub hub;
     FactoryController factories = new FactoryController();
     Observable outpost1; //Kinsale
     Observable outpost2; //Youghal
-    String name;
-    Bomb capacity = null;
-    Ship problemShip = null;
-    String fort = null;
+    String name; //Hub Name
+
+    Bomb capacity = null; //Bomb being produced.
+    Ship problemShip = null; //Ship thats passed in from the Observable.
+    String fort = null; //Name of the fort the bombs will be sent to.
 
 //    private DistributionHub(String hubName, Observable Ob1, Observable Ob2) {
 //        System.out.print("\nBlarney Powering Up\n");
