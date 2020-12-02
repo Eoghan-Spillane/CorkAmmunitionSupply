@@ -1,4 +1,9 @@
-Time/Date: 2020-11-17 at 00:56:59	 Threat: Destroyer	 Fort: Camden	 Response Sent: High Explosive
-Time/Date: 2020-11-17 at 00:57:01	 Threat: Submarine	 Fort: Carlisle	 Response Sent: Torpedo
-Time/Date: 2020-11-17 at 00:57:04	 Threat: Battleship	 Fort: Camden	 Response Sent: Sabot Shell
-Time/Date: 2020-11-17 at 00:57:05	 Threat: Destroyer	 Fort: Carlisle	 Response Sent: High Explosive
+Time/Date: 2020-12-02 at 20:02:14	 Threat: Battleship	 Fort: Carlisle	 Response Sent: Sabot Shell
+Time/Date: 2020-12-02 at 20:02:18	 Threat: Submarine	 Fort: Carlisle	 Response Sent: Torpedo
+Time/Date: 2020-12-02 at 20:02:21	 Threat: Submarine	 Fort: Carlisle	 Response Sent: Torpedo
+Time/Date: 2020-12-02 at 20:02:23	 Threat: Submarine	 Fort: Carlisle	 Response Sent: Torpedo
+Time/Date: 2020-12-02 at 20:02:26	 Threat: Battleship	 Fort: Carlisle	 Response Sent: Sabot Shell
+Time/Date: 2020-12-02 at 20:02:28	 Threat: Destroyer	 Fort: Carlisle	 Response Sent: High Explosive
+Time/Date: 2020-12-02 at 20:02:45	 Threat: Battleship	 Fort: Carlisle	 Response Sent: Sabot Shell
+Time/Date: 2020-12-02 at 20:02:47	 Threat: Destroyer	 Fort: Carlisle	 Response Sent: High Explosive
+Time/Date: 2020-12-02 at 20:02:48	 Threat: Submarine	 Fort: Carlisle	 Response Sent: Torpedo

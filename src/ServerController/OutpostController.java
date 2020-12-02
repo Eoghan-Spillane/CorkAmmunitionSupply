@@ -1,4 +1,4 @@
-package Controller;
+package ServerController;
 
 import Model.Outpost;
 import Model.Ships.Ship;

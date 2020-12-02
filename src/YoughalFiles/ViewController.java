@@ -1,6 +1,7 @@
-package Controller;
+package YoughalFiles;
 
-import Model.Dao.BlarneyProductionImpl;
+import Controller.FactoryController;
+import ServerController.OutpostController;
 
 // This class holds the functions that are activated by button presses in the gui
 public class ViewController {
@@ -37,39 +38,6 @@ public class ViewController {
             System.out.print("\n Fleet Full, there are " + fleetCounter + " Ships");
         }
     }
-
-    public void spotBattleshipWest(){
-        if(fleetCounter < 10){
-            fleetCounter++;
-            outposts.checkForShipsWest(factories.buildBattleship());
-            //outposts.checkForShipsWest(new BattleshipShipFactory().buildShip());
-        }
-        else{
-            System.out.print("\n Fleet Full, there are " + fleetCounter + " Ships");
-        }
-    }
-
-    public void spotDestroyerWest(){
-        if(fleetCounter < 10){
-            fleetCounter++;
-            outposts.checkForShipsWest(factories.buildDestroyer());
-        }
-        else{
-            System.out.print("\n Fleet Full, there are " + fleetCounter + " Ships");
-        }
-    }
-
-    public void spotSubmarineWest(){
-
-        if(fleetCounter < 10){
-            fleetCounter++;
-            outposts.checkForShipsWest(factories.buildSubmarine());
-        }
-        else{
-            System.out.print("\n Fleet Full, there are " + fleetCounter + " Ships");
-        }
-    }
-
 
     // Misc
     public void checkOutpostName(){
