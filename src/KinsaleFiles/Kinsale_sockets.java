@@ -10,7 +10,7 @@ public class Kinsale_sockets extends Application{
 
     public void start(Stage primaryStage) throws Exception{
         Parent Kinsale = FXMLLoader.load(getClass().getResource("Kinsale Gui.fxml"));
-        primaryStage.setTitle("Kinsale Outpost");
+        primaryStage.setTitle("Kinsale Outpost (Sockets)");
         primaryStage.setScene(new Scene(Kinsale, 300, 200));
         primaryStage.show();
     }

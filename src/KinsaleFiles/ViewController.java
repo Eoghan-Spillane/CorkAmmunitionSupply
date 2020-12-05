@@ -66,4 +66,8 @@ public class ViewController {
         }
     }
 
+    public void startPolling(){
+        polling(threat);
+    }
+
 }

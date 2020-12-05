@@ -7,13 +7,14 @@ import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
 public class RMIServerImpl implements spotShipServer{
-
-    public RMIServerImpl() throws RemoteException{
+    OutpostController outposts;
+    public RMIServerImpl(OutpostController outpost) throws RemoteException{
         UnicastRemoteObject.exportObject(this, 0);
+        outposts = outpost;
     }
 
     @Override
     public void spotShip(Ship ship) throws RemoteException {
-        System.out.println(ship.getShipName());
+        outposts.checkForShipsEast(ship);
     }
 }

@@ -26,7 +26,10 @@
                <VBox.margin>
                   <Insets top="5.0" />
                </VBox.margin></Button>
-            <Button mnemonicParsing="false" onAction="#thread" text="Connect" />
+            <Button mnemonicParsing="false" onAction="#startPolling" text="Connect">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin></Button>
          </children>
       </VBox>
    </children>

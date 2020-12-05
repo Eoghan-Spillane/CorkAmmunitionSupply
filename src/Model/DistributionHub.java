@@ -59,9 +59,9 @@ public class DistributionHub implements Runnable, Observer {
 
                 //If the attack is arriving from the west then the shells are sent to the opposite side of the harbor.
                 if(outpost.equals("Kinsale")){
-                    fort = "Carlisle";
+                    fort = "Carlisle (Sok)";
                 }else{
-                    fort = "Camden";
+                    fort = "Camden (RMI)";
                 }
 
                 problemShip = threat;

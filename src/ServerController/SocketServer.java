@@ -7,14 +7,13 @@ import java.io.InputStream;
 import java.io.ObjectInputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.List;
 
 public class SocketServer implements Runnable{
     static OutpostController outposts = new OutpostController();
 
     @Override
     public void run() {
-        System.out.println("Socket Server Started");
+        System.out.println("Checking For New Ships");
 
         try{
             ServerSocket serverSocket = new ServerSocket(4998);
@@ -26,7 +25,7 @@ public class SocketServer implements Runnable{
             try{
                     Ship ship = (Ship) objectInputStream.readObject();
                     if (ship == null){
-                        //Do Nothing
+                        System.out.println("No New Ships");
                     }else{
                         outposts.checkForShipsWest(ship);
                     }
@@ -36,7 +35,7 @@ public class SocketServer implements Runnable{
             }
 
 
-            System.out.println("Closing Socket Server\n");
+            //System.out.println("Closing Socket Server\n");
             serverSocket.close();
             socket.close();
             Server.restartSocketServer();
