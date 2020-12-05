@@ -18,7 +18,6 @@ public class Outpost extends Observable implements Runnable {
                 //System.out.print("\nThread " + Thread.currentThread().getId() + " at "+ this.name + " is Running - Start");
                     //System.out.print("\nThread " + Thread.currentThread().getId() + " is Updating");
                     Ship ship = arrivingShip;
-                    Thread.sleep(1000);
                     setChanged();
                     notifyObservers(ship);
 

@@ -23,16 +23,27 @@ public class SocketServer implements Runnable{
             InputStream inputStream = socket.getInputStream();
             ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);
 
-            Ship ship = (Ship) objectInputStream.readObject();
-            outposts.checkForShipsWest(ship);
+            try{
+                    Ship ship = (Ship) objectInputStream.readObject();
+                    if (ship == null){
+                        //Do Nothing
+                    }else{
+                        outposts.checkForShipsWest(ship);
+                    }
+
+            } catch (ClassNotFoundException e) {
+                System.out.println("No Ship Spotted");
+            }
+
 
             System.out.println("Closing Socket Server\n");
             serverSocket.close();
             socket.close();
             Server.restartSocketServer();
 
-        }catch (IOException | ClassNotFoundException e){
-            System.out.print("ERROR");
+        }catch (IOException e){
+            System.out.print("No Ship Sighted");
+            Server.restartSocketServer();
         }
     }
 
