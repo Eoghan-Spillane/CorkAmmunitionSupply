@@ -1,20 +1,24 @@
-Time/Date: 2020-12-05 at 22:08:27	 Threat: Battleship	 Fort: Carlisle (Sockets)	 Response Sent: Sabot Shell
-Time/Date: 2020-12-05 at 22:08:28	 Threat: Submarine	 Fort: Carlisle (Sockets)	 Response Sent: Torpedo
-Time/Date: 2020-12-05 at 22:08:30	 Threat: Destroyer	 Fort: Carlisle (Sockets)	 Response Sent: High Explosive
-Time/Date: 2020-12-05 at 22:08:44	 Threat: Battleship	 Fort: Camden (RMI)	 Response Sent: Sabot Shell
-Time/Date: 2020-12-05 at 22:08:50	 Threat: Destroyer	 Fort: Camden (RMI)	 Response Sent: High Explosive
-Time/Date: 2020-12-05 at 22:08:51	 Threat: Destroyer	 Fort: Camden (RMI)	 Response Sent: High Explosive
-Time/Date: 2020-12-05 at 22:08:53	 Threat: Battleship	 Fort: Carlisle (Sockets)	 Response Sent: Sabot Shell
-Time/Date: 2020-12-05 at 22:08:53	 Threat: Battleship	 Fort: Carlisle (Sockets)	 Response Sent: Sabot Shell
-Time/Date: 2020-12-05 at 22:08:54	 Threat: Submarine	 Fort: Camden (RMI)	 Response Sent: Torpedo
-Time/Date: 2020-12-05 at 22:08:54	 Threat: Submarine	 Fort: Camden (RMI)	 Response Sent: Torpedo
-Time/Date: 2020-12-05 at 22:08:55	 Threat: Submarine	 Fort: Carlisle (Sockets)	 Response Sent: Torpedo
-Time/Date: 2020-12-05 at 22:08:55	 Threat: Submarine	 Fort: Carlisle (Sockets)	 Response Sent: Torpedo
-Time/Date: 2020-12-05 at 22:08:56	 Threat: Battleship	 Fort: Camden (RMI)	 Response Sent: Sabot Shell
-Time/Date: 2020-12-05 at 22:08:56	 Threat: Battleship	 Fort: Camden (RMI)	 Response Sent: Sabot Shell
-Time/Date: 2020-12-05 at 22:08:57	 Threat: Battleship	 Fort: Carlisle (Sockets)	 Response Sent: Sabot Shell
-Time/Date: 2020-12-05 at 22:08:57	 Threat: Battleship	 Fort: Carlisle (Sockets)	 Response Sent: Sabot Shell
-Time/Date: 2020-12-05 at 22:08:57	 Threat: Destroyer	 Fort: Carlisle (Sockets)	 Response Sent: High Explosive
-Time/Date: 2020-12-05 at 22:08:58	 Threat: Destroyer	 Fort: Carlisle (Sockets)	 Response Sent: High Explosive
-Time/Date: 2020-12-05 at 22:08:58	 Threat: Destroyer	 Fort: Camden (RMI)	 Response Sent: High Explosive
-Time/Date: 2020-12-05 at 22:08:58	 Threat: Destroyer	 Fort: Camden (RMI)	 Response Sent: High Explosive
+Time/Date: 2020-12-06 at 16:53:02	 Threat: Destroyer	 Fort: Carlisle (Sok)	 Response Sent: High Explosive
+Time/Date: 2020-12-06 at 16:53:03	 Threat: Battleship	 Fort: Carlisle (Sok)	 Response Sent: Sabot Shell
+Time/Date: 2020-12-06 at 16:53:10	 Threat: Battleship	 Fort: Carlisle (Sok)	 Response Sent: Sabot Shell
+Time/Date: 2020-12-06 at 16:53:11	 Threat: Battleship	 Fort: Camden   (RMI)	 Response Sent: Sabot Shell
+Time/Date: 2020-12-06 at 16:53:12	 Threat: Submarine	 Fort: Carlisle (Sok)	 Response Sent: Torpedo
+Time/Date: 2020-12-06 at 16:53:12	 Threat: Submarine	 Fort: Camden   (RMI)	 Response Sent: Torpedo
+Time/Date: 2020-12-06 at 16:53:13	 Threat: Destroyer	 Fort: Carlisle (Sok)	 Response Sent: High Explosive
+Time/Date: 2020-12-06 at 16:53:13	 Threat: Destroyer	 Fort: Camden   (RMI)	 Response Sent: High Explosive
+Time/Date: 2020-12-06 at 16:53:14	 Threat: Submarine	 Fort: Carlisle (Sok)	 Response Sent: Torpedo
+Time/Date: 2020-12-06 at 16:53:14	 Threat: Submarine	 Fort: Camden   (RMI)	 Response Sent: Torpedo
+Time/Date: 2020-12-06 at 16:53:15	 Threat: Battleship	 Fort: Carlisle (Sok)	 Response Sent: Sabot Shell
+Time/Date: 2020-12-06 at 16:53:15	 Threat: Battleship	 Fort: Camden   (RMI)	 Response Sent: Sabot Shell
+Time/Date: 2020-12-06 at 16:53:16	 Threat: Destroyer	 Fort: Carlisle (Sok)	 Response Sent: High Explosive
+Time/Date: 2020-12-06 at 16:53:16	 Threat: Destroyer	 Fort: Camden   (RMI)	 Response Sent: High Explosive
+Time/Date: 2020-12-06 at 16:53:23	 Threat: Destroyer	 Fort: Carlisle (Sok)	 Response Sent: High Explosive
+Time/Date: 2020-12-06 at 16:53:24	 Threat: Destroyer	 Fort: Camden   (RMI)	 Response Sent: High Explosive
+Time/Date: 2020-12-06 at 16:53:25	 Threat: Battleship	 Fort: Carlisle (Sok)	 Response Sent: Sabot Shell
+Time/Date: 2020-12-06 at 16:53:25	 Threat: Battleship	 Fort: Camden   (RMI)	 Response Sent: Sabot Shell
+Time/Date: 2020-12-06 at 16:53:26	 Threat: Submarine	 Fort: Camden   (RMI)	 Response Sent: Torpedo
+Time/Date: 2020-12-06 at 16:53:26	 Threat: Submarine	 Fort: Carlisle (Sok)	 Response Sent: Torpedo
+Time/Date: 2020-12-06 at 16:53:48	 Threat: Battleship	 Fort: Camden   (RMI)	 Response Sent: Sabot Shell
+Time/Date: 2020-12-06 at 16:53:49	 Threat: Battleship	 Fort: Carlisle (Sok)	 Response Sent: Sabot Shell
+Time/Date: 2020-12-06 at 16:53:49	 Threat: Submarine	 Fort: Carlisle (Sok)	 Response Sent: Torpedo
+Time/Date: 2020-12-06 at 16:53:50	 Threat: Submarine	 Fort: Camden   (RMI)	 Response Sent: Torpedo

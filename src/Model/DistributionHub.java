@@ -61,7 +61,7 @@ public class DistributionHub implements Runnable, Observer {
                 if(outpost.equals("Kinsale")){
                     fort = "Carlisle (Sok)";
                 }else{
-                    fort = "Camden (RMI)";
+                    fort = "Camden   (RMI)";
                 }
 
                 problemShip = threat;
